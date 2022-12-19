@@ -2,24 +2,12 @@ div {
     border: 0.1em solid pink;
 }
 
-.container {
+.gameTab {
     display: flex;
 }
 
-.firstColumn {
+.carre {
     border: 0.1em solid pink;
     width: 100px;
     height: 100px;
-}
-
-.secondColumn {
-    border: 0.1em solid pink;
-    width: 100px;
-    height: 100px;
-}
-
-.thirdColumn {
-    border: 0.1em solid pink;
-    width: 100px;
-    height: 100px; 
 }

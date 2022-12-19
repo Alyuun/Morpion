@@ -1,9 +1,8 @@
 window.addEventListener("DOMContentLoaded", () => {
 // récupération des div du html pour les insérer dans 3 tableaux qui représentent 3 lignes de 3 cases chaccase1s
-let firstColumnTab = document.getElementsByClassName("firstLine");
-let secondColumnTab = document.getElementsByClassName("secondLine");
-let thirdColumnTad = document.getElementsByClassName("thirdLine");
 let nbTours = 0;
+let gameTab = document.getElementsByClassName("gameTab");
+let actualPlayer = "";
 
 let case1 = document.getElementById("1");
 let case2 = document.getElementById("2");
@@ -17,16 +16,16 @@ let case9 = document.getElementById("9");
 
 let startPlayer = " ";
 
+for (nbTours = 1; nbTours < 9; nbTours++){
+    actualPlayer
+}
+
 console.log(firstColumnTab);
 // création des 2 variables player
 let xPlayer = "X";
 let oPlayer = "O";
 
-/*for (let i = 0; i < 9; i++) {
-    xPlayer = 0;
-    oPlayer = 1;
-}*/
-
+// Joueur X ou O qui commence aléatoirement
 function quiCommence() {
     startPlayer = Math.floor(Math.random() * (3 - 1) + 1)
     if (startPlayer === 1) {
@@ -39,43 +38,21 @@ function quiCommence() {
 quiCommence();
 console.log(`C'est joueur ${startPlayer} qui commence !`)
 
-let cases = document.getElementsByClassName("container")
-console.log(cases)
+//  Quand je clique sur une case si c'est joueur X la case innerHTML X si c'est joueur O la case innerHTML O
 
-cases.addEventListener("click", () => {
-    if (actualPlayer = XPlayer) {
+function play(zone){
+    if (actualPlayer === xPlayer) {
         
     }
-})
-
-if ((case1 === "x" && case2 === "x" && case3 === "x") || (case4 === "x" && case5 === "x" && case6 === "x") || (case7 === "x" && case8 === "x" && case9 === "x") || (case1 === "x" && case4 === "x" && case7 === "x") || (case2 === "x" && case5 === "x" && case8 === "x") || (case3 === "x" && case6 === "x" && case9 === "x")) {
-    alert("Jouer X tu as gagné");
-} else if ((case1 === "o" && case2 === "o" && case3 === "o") || (case4 === "o" && case5 === "o" && case6 === "o") || (case7 === "o" && case8 === "o" && case9 === "o") || (case1 === "o" && case4 === "o" && case7 === "o") || (case2 === "o" && case5 === "o" && case8 === "o") || (case3 === "o" && case6 === "o" && case9 === "o")) {
-    alert("Joueur O tu as gagné")
 }
-
-// 
     
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
+// bouton reset pour relancer le jeu  
 button = document.getElementById("button");
 button.addEventListener("click", ()=> {
     
 })
     
 })
-
-
-// Joueur X ou O qui commence aléatoirement. Quand je clique sur une case si c'est joueur X la case innerHTML X si c'est joueur O la case innerHTML O
-// si 3 cases de suite sont X alors joueur X a gagné 
-// si 3 cases de suite sont O alors joueur O a gagné
-
