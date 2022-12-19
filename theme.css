@@ -6,17 +6,17 @@ div {
     display: flex;
 }
 
-.firstLine {
+.firstColumn {
     border: 0.1em solid pink;
     padding: 3em;
 }
 
-.secondLine {
+.secondColumn {
     border: 0.1em solid pink;
     padding: 3em;
 }
 
-.thirdLine {
+.thirdColumn {
     border: 0.1em solid pink;
     padding: 3em;    
 }
