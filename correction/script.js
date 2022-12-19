@@ -108,7 +108,7 @@ const handleRestartGame = () => {
 const DOMLoaded = () => {
     messageDOM = document.querySelector('#message')
     cells = document.querySelectorAll('.case')
-    recommencerDOM = document.querySelectorAll('#rejouer')
+    recommencerDOM = document.querySelector('#rejouer')
     
     messageDOM.innerText = tourJoueur()
     
