@@ -5,30 +5,30 @@ document.addEventListener("DOMContentLoaded", () => {
     let startPlayer = "";
     let carre = document.getElementsByClassName("carre");
 
-    let case1 = document.getElementById("1");
-    let case2 = document.getElementById("2");
-    let case3 = document.getElementById("3");
-    let case4 = document.getElementById("4");
-    let case5 = document.getElementById("5");
-    let case6 = document.getElementById("6");
-    let case7 = document.getElementById("7");
-    let case8 = document.getElementById("8");
-    let case9 = document.getElementById("9");
+    let case1 = document.getElementById("0");
+    let case2 = document.getElementById("1");
+    let case3 = document.getElementById("2");
+    let case4 = document.getElementById("3");
+    let case5 = document.getElementById("4");
+    let case6 = document.getElementById("5");
+    let case7 = document.getElementById("6");
+    let case8 = document.getElementById("7");
+    let case9 = document.getElementById("8");
 
     let tableau = [case1, case2, case3, case4, case5, case6, case7, case8, case9]
     let verifTab = [
-        [case1, case2, case3],
-        [case4, case5, case6],
-        [case7, case8, case9],
-        [case1, case4, case7],
-        [case2, case5, case8],
-        [case3, case6, case9],
-        [case1, case5, case9],
-        [case3, case5, case7]
+        [0, 1, 2],
+        [3, 4, 5],
+        [6, 7, 8],
+        [0, 3, 6],
+        [1, 4, 7],
+        [2, 5, 8],
+        [0, 4, 8],
+        [2, 4, 6]
     ]
 
     function verif() {
-        if (verifTab[0] || verifTab[1] || verifTab[2] || verifTab[3] || verifTab[4] || verifTab[5] || verifTab[6] || verifTab[7]) {
+        if (verifTab[0]) {
             console.log('dede');
         }
     }
