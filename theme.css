@@ -1,0 +1,22 @@
+div {
+    border: 0.1em solid pink;
+}
+
+.container {
+    display: flex;
+}
+
+.firstLine {
+    border: 0.1em solid pink;
+    padding: 3em;
+}
+
+.secondLine {
+    border: 0.1em solid pink;
+    padding: 3em;
+}
+
+.thirdLine {
+    border: 0.1em solid pink;
+    padding: 3em;    
+}
