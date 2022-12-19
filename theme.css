@@ -8,15 +8,18 @@ div {
 
 .firstColumn {
     border: 0.1em solid pink;
-    padding: 3em;
+    width: 100px;
+    height: 100px;
 }
 
 .secondColumn {
     border: 0.1em solid pink;
-    padding: 3em;
+    width: 100px;
+    height: 100px;
 }
 
 .thirdColumn {
     border: 0.1em solid pink;
-    padding: 3em;    
+    width: 100px;
+    height: 100px; 
 }
